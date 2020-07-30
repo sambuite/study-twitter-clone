@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Feed from '../Feed';
+
 import * as S from './styles';
 
 const ProfileMain: React.FC = () => {
@@ -10,13 +12,13 @@ const ProfileMain: React.FC = () => {
       </S.Banner>
 
       <S.ProfileData>
-        {/* <S.EditButton outlined> Editar Perfil</S.EditButton> */}
+        <S.EditButton outlined> Editar Perfil</S.EditButton>
 
         <h1>Murilo Sambuite</h1>
         <h2>@murilosambuite</h2>
 
         <p>
-          Developer at <a href="#">World</a>
+          Developer at <a href="#">@World</a>
         </p>
 
         <ul>
@@ -39,6 +41,7 @@ const ProfileMain: React.FC = () => {
           </span>
         </S.Followage>
       </S.ProfileData>
+      <Feed />
     </S.Container>
   );
 };
